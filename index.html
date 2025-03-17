@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de registro de Productos</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/index.js" defer></script>
+</head>
+<body>
+    <main class="gridmain" id="main">
+        <article class="formulario-productos" id="formulario-productos">formulario
+
+            <h1 class="titulo">Registro de productos</h1>
+            <form id="formulario">
+                <div class="nombre-producto" id="nombre-producto">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" class="nombre" id="nombre" name="nombre">
+                </div>
+                <div class="cantidad-producto" id="cantidad-producto">
+                    <label for="cantidad">Cantidad: </label>
+                    <input type="range" class="cantidad" id="cantidad" name="cantidad" min="1" max="100">
+                </div>
+                <div class="precio-producto" id="precio-producto">
+                    <label for="precio">Precio: </label>
+                    <input type="number" class="precio" id="precio" name="precio">
+                </div>
+                <button class="submit" id="submit">Enviar Datos</button>
+            </form>
+
+        </article>
+        <article class="productos" id="productos">productos
+
+            <h1 class="titulo">Lista de productos</h1>
+            <div class="lista-productos" id="listaproductos">
+                <section class="encabezados-productos" id="encabezados-productos">
+                    <div class="cabecera" id="cabecera">
+                        <p>Nombre</p>
+                        <p>Cantidad</p>
+                        <p>Precio</p>
+                        <p>Acción</p>
+                    </div>
+                    <div class="linea">____________</div>
+                </section>
+                <section class="listado-prod" id="listado-prod"></section>
+                
+            </div>
+
+        </article>
+    </main>
+</body>
+</html>
