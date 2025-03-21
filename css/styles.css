@@ -13,12 +13,114 @@ html,body{
 }
 
 .formulario-productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #f9f9f9;
-    height: full;
+    height: 100%;
+    width: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+.formulario{
+
+    text-align: justify;
+}
+
+.formulario>div{
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.formulario>div>input{
+    border-radius: 10px;
+    height: 1.2rem; 
+    margin-left: 1rem;
+}
+
+.formulario>div>.precio{
+    margin-left: 2rem;
+}
+
+.formulario>div>.nombre{
+    margin-left: 1.2rem;
+}
+
+.submit{
+    background-color: rgb(149, 121, 194);
+    color: antiquewhite;
+    font-size: medium;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-left: 4rem;
+    padding: 1rem;
+    width: 10rem;
+    border-radius: 1rem;
+}
+
+.lista-productos{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
 }
 
 .productos{
+    display: flex;
+    justify-content: center;
     color: antiquewhite;
     background-color: #3e0b5e;
-    height: full;
+    height: 100%;
+}
+
+.cabecera{
+    display: flex;
+    width: 100%;
+    padding-bottom: 1rem;
+    border-bottom: 1.5px solid antiquewhite;
+    justify-content: center;
+}
+
+.cabecera>p{
+    width: 3rem;
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+}
+
+.new-product{
+    display: flex;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.new-product>p{
+    width: 3rem;
+    margin-right: 5rem;
+}
+
+.accion{
+    margin-top: 0.8rem;
+}
+
+.titulo{
+    width: full;
+    text-align: center;
+}
+
+.actualizar{
+    background-color: rgb(80, 196, 35);
+    border-radius: 1rem;
+    margin-right: 0.3rem;
+}
+
+.eliminar{
+    background-color: rgb(197, 30, 30);
+    border-radius: 1rem;
+}
+
+.input-update{
+    width: 3rem;
+    height: 1rem;
+    margin-top: 1rem;
+    margin-right: 4.5rem;
+
 }
