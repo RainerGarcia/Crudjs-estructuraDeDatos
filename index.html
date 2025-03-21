@@ -9,30 +9,30 @@
 </head>
 <body>
     <main class="gridmain" id="main">
-        <article class="formulario-productos" id="formulario-productos">formulario
-
-            <h1 class="titulo">Registro de productos</h1>
-            <form id="formulario">
+        <article class="formulario-productos" id="formulario-productos">
+            <form class ="formulario "id="formulario">
+                <h1 class="titulo">Registro de productos</h1>
                 <div class="nombre-producto" id="nombre-producto">
                     <label for="nombre">Nombre: </label>
-                    <input type="text" class="nombre" id="nombre" name="nombre">
+                    <input type="text" class="nombre" id="nombre" name="nombre" required>
                 </div>
                 <div class="cantidad-producto" id="cantidad-producto">
                     <label for="cantidad">Cantidad: </label>
-                    <input type="range" class="cantidad" id="cantidad" name="cantidad" min="1" max="100">
+                    <input type="range" class="cantidad" id="cantidad" value="1" name="cantidad" min="1" onInput="this.nextElementSibling.value = this.value" required>
+                    <output>1</output>
                 </div>
                 <div class="precio-producto" id="precio-producto">
                     <label for="precio">Precio: </label>
-                    <input type="number" class="precio" id="precio" name="precio">
+                    <input type="number" class="precio" id="precio" name="precio" min="1" required>
                 </div>
                 <button class="submit" id="submit">Enviar Datos</button>
             </form>
 
         </article>
-        <article class="productos" id="productos">productos
+        <article class="productos" id="productos">
 
-            <h1 class="titulo">Lista de productos</h1>
             <div class="lista-productos" id="listaproductos">
+                <h1 class="titulo">Lista de productos</h1>
                 <section class="encabezados-productos" id="encabezados-productos">
                     <div class="cabecera" id="cabecera">
                         <p>Nombre</p>
@@ -40,7 +40,6 @@
                         <p>Precio</p>
                         <p>Acción</p>
                     </div>
-                    <div class="linea">____________</div>
                 </section>
                 <section class="listado-prod" id="listado-prod"></section>
                 
