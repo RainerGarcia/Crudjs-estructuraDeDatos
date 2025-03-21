@@ -4,12 +4,12 @@ const output = document.querySelector('#listado-prod');
 const listado_productos = document.querySelector('#listado-prod');
 let listaProductos = [];
 
-form.addEventListener('submit',(event)=>{
+form.addEventListener('submit',(event) => {
     event.preventDefault();
     const datos = new FormData(form);
     const data = {};
 
-    datos.forEach((value,key)=>{
+    datos.forEach((value,key) => {
         data[key] = value;
     });
 
@@ -37,7 +37,7 @@ output_productos = () => {
     output.innerHTML = anexar;
 };
 
-listado_productos.addEventListener('click',(event)=>{
+listado_productos.addEventListener('click', (event) => {
 
     let i = event.target.getAttribute('index');
 
@@ -101,7 +101,7 @@ update_element = (i) => {
     eliminar.replaceWith(cancelar);
 
 
-    modificar.addEventListener('click',()=>{
+    modificar.addEventListener('click', () => {
 
         listaProductos[i].nombre = input_nombre.value;
         listaProductos[i].cantidad = input_cantidad.value;
@@ -119,7 +119,7 @@ update_element = (i) => {
 
     });
 
-    cancelar.addEventListener('click',()=>{
+    cancelar.addEventListener('click', () => {
 
         input_nombre.replaceWith(nombre);
         input_cantidad.replaceWith(cantidad);
